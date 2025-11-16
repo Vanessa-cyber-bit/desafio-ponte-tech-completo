@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div>
-      {/* --- ESTA É A CORREÇÃO --- */}
       {/* Removemos o 'bg="primary"' para o nosso CSS poder aplicar o vidro */}
       <Navbar variant="dark" expand="lg" collapseOnSelect>
         <Container>
