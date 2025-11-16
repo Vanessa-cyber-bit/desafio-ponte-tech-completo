@@ -1,0 +1,11 @@
+# Ignora todas as pastas node_modules (do backend e do frontend)
+*/node_modules
+
+# Ignora os arquivos .env (NUNCA envie suas senhas para o GitHub)
+*/.env
+
+# Ignora a pasta de cache do Docker
+mysql-data/
+
+# Ignora a pasta de cobertura de testes
+*/coverage
