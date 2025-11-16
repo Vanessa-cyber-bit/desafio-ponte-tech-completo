@@ -1,4 +1,4 @@
-// Este é o arquivo index.test.js
+
 
 const request = require('supertest'); // Nosso "imitador" de requisições
 const app = require('./index'); // Nosso servidor (do index.js)
