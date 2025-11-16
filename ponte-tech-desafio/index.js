@@ -128,7 +128,7 @@ app.post('/api/auth/login', async (req, res) => {
 // 1. Listar TODAS as tarefas do usuário logado
 app.get('/api/tasks', authMiddleware, async (req, res) => {
   try {
-    // --- ESTA É A MUDANÇA ---
+    
     // 1. Pega os filtros da URL (query parameters)
     const { status, prioridade } = req.query;
 
@@ -144,7 +144,6 @@ app.get('/api/tasks', authMiddleware, async (req, res) => {
     if (prioridade) {
       whereClause.prioridade = prioridade; // Ex: prioridade: 'Alta'
     }
-    // --- FIM DA MUDANÇA ---
 
     const tarefas = await prisma.tarefa.findMany({
       where: whereClause, // Usa o filtro dinâmico que montamos
