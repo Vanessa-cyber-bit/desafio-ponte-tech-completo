@@ -1,0 +1,124 @@
+/* ---------------------------------- */
+/* --- 1. CONFIGURAÇÃO DE COR ROXA --- */
+/* ---------------------------------- */
+:root {
+  --bs-primary: #7B2CBF; 
+  --bs-primary-rgb: 123, 44, 191; 
+}
+
+/* ---------------------------------- */
+/* --- 2. O FUNDO "ORBE" (NOVO!) --- */
+/* ---------------------------------- */
+body {
+  /* Fundo base (roxo-escuro, mais escuro que antes) */
+  background-color: #101020; 
+  
+  /* Múltiplos "orbes" de luz (como na referência) */
+  background-image: 
+    /* Orbe Roxo (canto superior esquerdo) */
+    radial-gradient(circle at 15% 25%, rgba(122, 44, 191, 0.348), transparent 30%),
+    /* Orbe Azul (canto inferior direito) */
+    radial-gradient(circle at 85% 75%, rgba(80, 121, 255, 0.192), transparent 40%);
+  
+  /* Configurações do Fundo */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* O fundo fica parado quando a página rola */
+  color: #ffffff;
+}
+
+/* ---------------------------------- */
+/* --- 3. O "VIDRO FOSCO" --- */
+/* ---------------------------------- */
+.card,
+.bg-light,
+.list-group-item,
+.navbar {
+  background-color: rgba(255, 255, 255, 0.05) !important; 
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 15px 5px rgba(123, 44, 191, 0.2) !important;
+}
+
+/* O Navbar tem um fundo roxo-transparente um pouco mais forte */
+.navbar {
+  background-color: rgba(123, 44, 191, 0.15) !important; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ---------------------------------- */
+/* --- 4. AJUSTES DE LEITURA (TEXTO) --- */
+/* ---------------------------------- */
+.card h2,
+.card-title,
+.form-label {
+  color: #ffffff !important; 
+}
+.card-text {
+  color: #e0e0e0 !important; 
+}
+.text-muted {
+  color: #adb5bd !important;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.form-control::placeholder {
+    color: #bbbbbb !important;
+}
+.form-select option {
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+/* ---------------------------------- */
+/* --- 5. ESTILO DOS BOTÕES (VAZADO) --- */
+/* ---------------------------------- */
+.btn-primary {
+  background-color: transparent !important;
+  border-color: var(--bs-primary) !important; 
+  color: var(--bs-primary) !important;
+}
+.btn-primary:hover {
+  background-color: var(--bs-primary) !important; 
+  color: #ffffff !important;
+}
+.btn-success {
+  background-color: transparent !important;
+  border-color: #adb5bd !important;
+  color: #adb5bd !important;
+}
+.btn-success:hover {
+  background-color: #adb5bd !important;
+  color: #ffffff !important;
+}
+.btn-danger {
+  background-color: transparent !important;
+  border-color: #adb5bd !important;
+  color: #adb5bd !important;
+}
+.btn-danger:hover {
+  background-color: #adb5bd !important;
+  color: #ffffff !important;
+}
+.btn-warning {
+  background-color: transparent !important;
+  border-color: #adb5bd !important; 
+  color: #adb5bd !important;
+}
+.btn-warning:hover {
+  background-color: #adb5bd !important;
+  color: #ffffff !important;
+}
+.btn-outline-secondary {
+  color: #adb5bd !important;
+  border-color: #adb5bd !important;
+}
+.btn-outline-secondary:hover {
+  color: #ffffff !important;
+  background-color: #adb5bd !important;
+}
